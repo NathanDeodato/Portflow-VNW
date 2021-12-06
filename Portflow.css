@@ -1,0 +1,125 @@
+/* config-font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* config-reset */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+/* config-body */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* config-header */
+header {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+}
+
+.Box-IconPortflow {
+    width: 50%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    padding-left: 10vw;
+}
+
+.Box-SectionNav {
+    width: 50%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Box-Nav {
+    width: 50%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5vw;
+}
+.Box-Ul {
+    width: 50%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Nav-Li {
+    width: 10vw;
+    
+    font-size: 0.9rem;
+    font-weight: lighter;
+
+    padding: 1vw;
+}
+.Nav-Li:hover {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+/* config-main */
+.Box-BackgroundBlue {
+    height: 80vh;
+    
+    background-image: url("Assets/Main-BackgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Main-Title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    
+    padding-left: 5%;
+}
+.Main-SubTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+
+    padding-left: 5.4%;
+}
+
+.Box-ImagesProdutos {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.SectImage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.ImageMore {
+    width: 22%;
+    padding-right: 1%;
+}
+
+
+/* config-footer */
+.footer {
+    width: 100%;
+    height: 10%;
+}
+.Box-Footer {
+    width: 100%;
+}
