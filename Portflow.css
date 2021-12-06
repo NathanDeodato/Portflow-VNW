@@ -19,9 +19,17 @@ header {
     width: 100%;
     height: 10vh;
 
-    display: flex;
+    position: fixed;
+    /* display: flex; */
 }
 
+.Container-Header {
+    width: 100%;
+    height: 10vh;
+
+    background-color: #fff;
+    display: flex;
+}
 .Box-IconPortflow {
     width: 50%;
     height: 10vh;
@@ -59,12 +67,14 @@ header {
 .Nav-Li {
     width: 10vw;
     
+    color: rgb(117, 117, 117);
     font-size: 0.9rem;
     font-weight: lighter;
 
     padding: 1vw;
 }
 .Nav-Li:hover {
+    color: black;
     cursor: pointer;
     font-weight: bolder;
 }
@@ -88,6 +98,7 @@ header {
     font-weight: bold;
     color: white;
     
+    padding-bottom: 2%;
     padding-left: 5%;
 }
 .Main-SubTitle {
@@ -117,10 +128,44 @@ header {
 
 
 /* config-footer */
-.footer {
+.Container-Footer {
     width: 100%;
-    height: 10%;
+    height: 10vh;
+
+    display: flex;
+    
+    background-color: rgb(243, 243, 243);
 }
-.Box-Footer {
-    width: 100%;
+
+.Box-RedesSociais {
+    width: 30%;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Footer-Icon {
+    width: 6%;
+}
+.Footer-Icon:hover {
+    cursor: pointer;
+}
+
+.Box-Copy {
+    width: 70%;
+    height: 10vh;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Title-Copy {
+    padding-left: 5%;
+    padding-right: 2%;
+
+    font-size: 1rem;
+}
+.Text-Copy {
+    font-size: 0.8rem;
 }
