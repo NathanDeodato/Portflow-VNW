@@ -12,7 +12,7 @@ O Portflow é um dos projetos finais do primeiro módulo do curso do VaiNaWeb. �
 ---
 
 <h2 align="center">Design</h2>
-<a href="https://xd.adobe.com/view/13ead2e1-3ac9-44a1-b4cb-14736da07bb0-46b9/specs/"><img src="https://img.shields.io/static/v1?label=Design&message=ADOBEXD&color=4B0082&style=for-the-badge&logo=GHOST" alt="ntShield-Designe"></a>
+<a href="https://xd.adobe.com/view/13ead2e1-3ac9-44a1-b4cb-14736da07bb0-46b9/specs/"><img src="https://img.shields.io/static/v1?label=Design&message=ADOBEXD&color=4B0082&style=for-the-badge&logo=ADOBEXD" alt="ntShield-Designe"></a>
 
 ---
 
