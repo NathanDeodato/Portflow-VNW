@@ -10,36 +10,38 @@
 }
 
 /* config-body */
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
 /* config-header */
+
 header {
     width: 100%;
     height: 10vh;
 
     position: fixed;
-    /* display: flex; */
 }
 
-.Container-Header {
+.container-header {
     width: 100%;
     height: 10vh;
 
     background-color: #fff;
     display: flex;
 }
-.Box-IconPortflow {
+
+.box-iconportflow {
     width: 50%;
     height: 10vh;
 
     display: flex;
     align-items: center;
-    padding-left: 10vw;
+    padding-left: 6.5%;
 }
 
-.Box-SectionNav {
+.box-sectionnav {
     width: 50%;
     height: 10vh;
 
@@ -47,7 +49,8 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
-.Box-Nav {
+
+.box-nav {
     width: 50%;
     height: 10vh;
 
@@ -56,7 +59,8 @@ header {
     align-items: center;
     padding-right: 5vw;
 }
-.Box-Ul {
+
+.box-ul {
     width: 50%;
     height: 10vh;
 
@@ -64,16 +68,18 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
-.Nav-Li {
+
+.nav-li {
     width: 10vw;
     
     color: rgb(117, 117, 117);
-    font-size: 0.9rem;
+    font-size: 0.9em;
     font-weight: lighter;
 
     padding: 1vw;
 }
-.Nav-Li:hover {
+
+.nav-li:hover {
     color: black;
     cursor: pointer;
     font-weight: bolder;
@@ -81,7 +87,8 @@ header {
 
 
 /* config-main */
-.Box-BackgroundBlue {
+
+.container-backgroundblue {
     width:100%;
     height: 80vh;
     
@@ -93,51 +100,73 @@ header {
     flex-direction: column;
     justify-content: center;
 }
-.Main-Title {
-    font-size: 4rem;
+
+.main-title {
+    font-size: 3.6em;
     font-weight: bold;
     color: white;
+
+    padding-left: 6%;
     
-    padding-bottom: 2%;
-    padding-left: 5%;
+    /* position: absolute;
+    left: 5%; */
 }
-.Main-SubTitle {
+
+.main-subtitle {
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
 
-    padding-left: 5.4%;
+    padding-top: 2%;
+    padding-left: 6.3%;
+
+/*     position: absolute;
+    top: 50%;
+    left: 5.3%; */
 }
 
-.Box-ImagesProdutos {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+.box-imagesprodutos {
+    flex-wrap: wrap;
 }
-.SectImage {
+
+.sectimage {
+    width: 100%;
+
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+.imagemore {
+    width: 22%;
+    
+    display: flex;
 
     padding-top: 1%;
-    padding-bottom: 1%;
-}
-.ImageMore {
-    width: 22%;
     padding-right: 1%;
 }
 
-
 /* config-footer */
-.Container-Footer {
+
+footer {
+    padding-top: 1%;
+}
+
+.container-footer {
     width: 100%;
     height: 10vh;
+
+    padding-top: 2%;
 
     display: flex;
     
     background-color: rgb(243, 243, 243);
 }
 
-.Box-RedesSociais {
+.box-espace {
+    width: 4%;
+}
+
+.box-redessociais {
     width: 30%;
     height: 10vh;
     
@@ -145,27 +174,92 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-.Footer-Icon {
+
+.footer-icon {
     width: 6%;
 }
-.Footer-Icon:hover {
+
+.footer-icon:hover {
     cursor: pointer;
 }
 
-.Box-Copy {
-    width: 70%;
+.box-copy {
+    width: 50%;
     height: 10vh;
 
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.Title-Copy {
+
+.title-copy {
     padding-left: 5%;
     padding-right: 2%;
 
     font-size: 1rem;
 }
-.Text-Copy {
+
+.text-copy {
     font-size: 0.8rem;
+}
+
+/* config - laptop responsive */
+
+@media (max-width: 1024px) {
+    
+    /* config-main */
+    
+    .main-title {
+        font-size: 2.7em;
+    }
+
+    .main-subtitle {
+        font-size: 1.2em;
+    }
+
+    /* config-footer */
+
+    .title-copy {
+        font-size: 0.9em;
+    }
+
+    .text-copy {
+        font-size: 0.8em;
+    }
+}
+
+/* config - tablet responsive */
+
+@media (max-width: 768px) {
+    
+    /* config-header */
+
+    .nav-li {
+        font-size: 0.8em;
+    }
+
+    /* config-main */
+
+    .container-backgroundblue {
+        height: 50vh;
+    }
+
+    .main-title {
+        font-size: 2em;
+
+        padding-top: 6%;
+    }
+
+    .main-subtitle {
+        font-size: 0.9em;
+    }
+
+    /* config-footer */
+
+    .title-copy {
+        font-size: 0.8em;
+    }
+    .text-copy {
+        font-size: 0.6em;
+    }
 }
