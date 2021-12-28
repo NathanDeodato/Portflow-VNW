@@ -18,7 +18,7 @@ O Portflow é um dos projetos finais do primeiro módulo do curso do VaiNaWeb. �
 
 <h2  align="center">Application demo</h2>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d6ab7560-4326-4d52-b51e-b2daf057ff86/deploy-status)](https://app.netlify.com/sites/portflow-vnw/deploys)
+<a href="https://portflow-vnw.netlify.app/"><img src="https://img.shields.io/static/v1?label=Netlify&message=Demo&color=0e1e25&style=for-the-badge&logo=NETLIFY" alt="ntShield"></a>
 
 ---
 
