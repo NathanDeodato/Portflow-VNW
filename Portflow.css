@@ -32,17 +32,21 @@ header {
     display: flex;
 }
 
-.box-iconportflow {
+.box-portflow {
     width: 50%;
     height: 10vh;
 
     display: flex;
     align-items: center;
-    padding-left: 6.5%;
+    margin-left: 6vw;
+}
+
+.header-title {
+    font-size: 1.5em;
 }
 
 .box-sectionnav {
-    width: 50%;
+    width:85vw;
     height: 10vh;
 
     display: flex;
@@ -51,13 +55,8 @@ header {
 }
 
 .box-nav {
-    width: 50%;
+    width: 40%;
     height: 10vh;
-
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5vw;
 }
 
 .box-ul {
@@ -65,14 +64,12 @@ header {
     height: 10vh;
 
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
 .nav-li {
     width: 10vw;
     
-    color: rgb(117, 117, 117);
     font-size: 0.9em;
     font-weight: lighter;
 
@@ -85,6 +82,17 @@ header {
     font-weight: bolder;
 }
 
+.header-ancora {
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+}
+
+.header-ancora:hover {
+    color: black;
+    font-weight: bolder;
+
+    cursor: pointer;
+}
 
 /* config-main */
 
@@ -107,9 +115,6 @@ header {
     color: white;
 
     padding-left: 6%;
-    
-    /* position: absolute;
-    left: 5%; */
 }
 
 .main-subtitle {
@@ -154,8 +159,6 @@ footer {
 .container-footer {
     width: 100%;
     height: 10vh;
-
-    padding-top: 2%;
 
     display: flex;
     
@@ -203,10 +206,20 @@ footer {
     font-size: 0.8rem;
 }
 
+.footer-boxbutton {
+    display: none;       
+}
+
 /* config - laptop responsive */
 
 @media (max-width: 1024px) {
     
+    /* config-header */
+
+    .box-nav {
+        margin-right: 6vw;
+    }
+
     /* config-main */
     
     .main-title {
@@ -224,7 +237,7 @@ footer {
     }
 
     .text-copy {
-        font-size: 0.8em;
+        font-size: 0.65em;
     }
 }
 
@@ -234,8 +247,16 @@ footer {
     
     /* config-header */
 
+    .box-portflow {
+        margin-left: 10vw;
+    }
+
+    .box-nav {
+        margin-right: 13vw;
+    }
+
     .nav-li {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     /* config-main */
@@ -247,19 +268,284 @@ footer {
     .main-title {
         font-size: 2em;
 
-        padding-top: 6%;
+        padding-left: 10vw;
+        padding-top: 6vh;
     }
 
     .main-subtitle {
+        padding-left: 10vw;
+
         font-size: 0.9em;
     }
 
+    .sectimage {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imagemore {
+        width: 40%;
+    }
+
     /* config-footer */
+
+    .box-redessociais {
+        margin-left: 4vw;
+    }
 
     .title-copy {
         font-size: 0.8em;
     }
     .text-copy {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 560px) {
+    
+    /* config-header */
+    
+    .nav-li {
         font-size: 0.6em;
     }
+    
+    /* config-main */
+
+    .main-title {
+        font-size: 1.8em;
+    }
+
+    .sectimage {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imagemore {
+        width: 60%;
+    }
+
+    /* config-footer */
+
+    .title-copy {
+        font-size: 0.6em;
+    }
+
+    .text-copy {
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    /* config-header */
+    
+    .nav-li {
+        font-size: 0.55em;
+    }
+
+    /* config-main */
+
+}
+
+@media (max-width: 425px) {
+    
+    /* config-header */
+
+    .container-header {
+        height: 5vh;
+    }
+
+    .box-menus {
+        width: 60%;
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+    .box-portflow {
+        width: 100%;
+        height: 5vh;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-menu {
+        width: 100%;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        background-color: black;
+    }
+
+    .box-menu:hover .box-ul{
+        width: 5vh;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-hrone {
+        width: 5vw;
+        height: 0.4vh;
+
+        border: none;
+        background-color: white;
+    }
+    
+    .header-hrtwo {
+        width: 5vw;
+        height: 0.4vh;
+
+        border: none;
+        background-color: white;
+    }
+    
+    .header-hrthree {
+        width: 5vw;
+        height: 0.4vh;
+
+        border: none;
+        background-color: white;
+    }
+
+    .box-sectionnav {
+        width: 25.1vw;
+        height: 30vh;
+    
+        background-color: black;
+
+        position: absolute;
+        top: 5vh;
+    }
+    
+    .box-nav {
+        width: 100%;
+        height: 10vh;
+    }
+    
+    .box-ul {
+        width: 25vw;
+        height: 30vh;
+
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        position: absolute;
+        top: 1vh;
+    }
+
+    .nav-li {
+        width: 25vw;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-li:hover {
+        color: black;
+        background-color: #fff;
+    }
+
+    .nav-li:hover .header-ancora {
+        color: black;
+    }
+
+    .header-ancora {
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    /* config-main */
+    
+    .container-backgroundblue {
+        height: 125vh;        
+        
+        background-image: url("Assets/main-backgroundmobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .main-title {
+        width: 40%;
+
+        padding-bottom: 5%;
+
+        font-size: 3em;
+    }
+
+    .main-subtitle {
+        padding-bottom: 10%;
+    }
+
+    /* config-footer */
+
+    .container-footer {
+        height: 25vh;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-redessociais {
+        width: 59.4vw;
+
+        background-color: #7FDBD4;
+
+        margin-right: 5%;
+    }
+
+    .footer-icon {
+        width: 5vw;
+    }
+
+    .box-copy {
+        width: 59.4vw;
+        
+        margin-top: 3vh;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .title-copy {
+        padding: 0;
+    }
+
+    .text-copy {
+        width: 25vw;
+    }
+
+    .footer-boxbutton {
+        width: 15vw;
+        height: 5vh;
+        
+        display: flex;
+        align-items: flex-end;
+        
+        position: absolute;
+        top: 718vh;
+        right: 21vw;
+
+        z-index: 1;
+    }
+
+    .footer-button {
+        width: 15vw;
+        height: 5vh;
+
+        color: #CCCCCC;
+        background-color: #333333;
+        border: none;
+    }
+
 }
