@@ -32,6 +32,17 @@ header {
     display: flex;
 }
 
+.box-menus {
+    width: 70%;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.box-menu {
+    display: none;
+}
+
 .box-portflow {
     width: 50%;
     height: 10vh;
@@ -42,12 +53,14 @@ header {
 }
 
 .header-title {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .box-sectionnav {
     width:85vw;
     height: 10vh;
+
+    margin-right: 14vw;
 
     display: flex;
     justify-content: flex-end;
@@ -347,19 +360,19 @@ footer {
 
 }
 
+@media (max-width: 426px) {
+    
+    .box-sectionnav{
+        visibility: hidden;
+    }
+}
+
 @media (max-width: 425px) {
     
     /* config-header */
 
     .container-header {
         height: 5vh;
-    }
-
-    .box-menus {
-        width: 60%;
-        
-        display: flex;
-        flex-direction: row;
     }
 
     .box-portflow {
@@ -377,16 +390,9 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
 
         background-color: black;
-    }
-
-    .box-menu:hover .box-ul{
-        width: 5vh;
-        
-        display: flex;
-        flex-direction: column;
     }
 
     .header-hrone {
@@ -414,8 +420,8 @@ footer {
     }
 
     .box-sectionnav {
-        width: 25.1vw;
-        height: 30vh;
+        width: 30vw;
+        height: 35vh;
     
         background-color: black;
 
@@ -425,12 +431,12 @@ footer {
     
     .box-nav {
         width: 100%;
-        height: 10vh;
+        height: 35vh;
     }
     
     .box-ul {
-        width: 25vw;
-        height: 30vh;
+        width: 30vw;
+        height: 35vh;
 
         flex-direction: column;
         justify-content: space-evenly;
@@ -440,10 +446,12 @@ footer {
     }
 
     .nav-li {
-        width: 25vw;
+        width: 30vw;
+        height: 7vh;
 
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     .nav-li:hover {
@@ -457,8 +465,12 @@ footer {
 
     .header-ancora {
         color: #fff;
-        font-size: 1em;
+        font-size: 1.1em;
         font-weight: bold;
+    }
+
+    .header-title {
+        font-size: 1.1em;
     }
 
     /* config-main */
